@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({14:[function(require,module,exports) {
+})({16:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],12:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,25 +159,25 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":14}],4:[function(require,module,exports) {
+},{"./bundle-url":16}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],3:[function(require,module,exports) {
+},{"_css_loader":15}],5:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],21:[function(require,module,exports) {
+},{"_css_loader":15}],9:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],15:[function(require,module,exports) {
+},{"_css_loader":15}],17:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -364,7 +364,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],13:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 var define;
@@ -11241,7 +11241,7 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
-},{"process":15}],7:[function(require,module,exports) {
+},{"process":17}],4:[function(require,module,exports) {
 'use strict';
 
 require('./app1.css');
@@ -11284,13 +11284,13 @@ $button4.on('click', function () {
    localStorage.setItem('n', n);
    $number.text(n);
 });
-},{"./app1.css":21,"jquery":13}],6:[function(require,module,exports) {
+},{"./app1.css":9,"jquery":14}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],8:[function(require,module,exports) {
+},{"_css_loader":15}],6:[function(require,module,exports) {
 "use strict";
 
 require("./app2.css");
@@ -11310,13 +11310,13 @@ $tabBar.on("click", "li", function (e) {
     var index = $li.index();
     tabContent.children().eq(index).addClass("active").siblings().removeClass("active");
 });
-},{"./app2.css":6,"jquery":13}],26:[function(require,module,exports) {
+},{"./app2.css":10,"jquery":14}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],10:[function(require,module,exports) {
+},{"_css_loader":15}],7:[function(require,module,exports) {
 'use strict';
 
 require('./app3.css');
@@ -11331,13 +11331,13 @@ var $square = (0, _jquery2.default)('#app3 .square');
 $square.on('click', function () {
     $square.toggleClass("active");
 });
-},{"./app3.css":26,"jquery":13}],29:[function(require,module,exports) {
+},{"./app3.css":12,"jquery":14}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],9:[function(require,module,exports) {
+},{"_css_loader":15}],8:[function(require,module,exports) {
 "use strict";
 
 require("./app4.css");
@@ -11354,7 +11354,7 @@ $circle.on('mouseenter', function () {
 }).on('mouseleave', function () {
     $circle.removeClass("active");
 });
-},{"./app4.css":29,"jquery":13}],2:[function(require,module,exports) {
+},{"./app4.css":11,"jquery":14}],2:[function(require,module,exports) {
 'use strict';
 
 require('./reset.css');
@@ -11368,7 +11368,7 @@ require('./app2.js');
 require('./app3.js');
 
 require('./app4.js');
-},{"./reset.css":4,"./global.css":3,"./app1.js":7,"./app2.js":8,"./app3.js":10,"./app4.js":9}],33:[function(require,module,exports) {
+},{"./reset.css":3,"./global.css":5,"./app1.js":4,"./app2.js":6,"./app3.js":7,"./app4.js":8}],22:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11397,7 +11397,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '42993' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '19787' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -11538,5 +11538,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[33,2], null)
+},{}]},{},[22,2], null)
 //# sourceMappingURL=/main.a89d3608.map

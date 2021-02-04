@@ -14,12 +14,13 @@
 #page > section{
     width: 50vw;
     height: 50vh;
+    border:1px solid grey
 }
 body{
     overflow: hidden;
 }
 #app1 {
-    border:1px solid red;
+    
 }
 #app1 .output {
 
@@ -27,7 +28,6 @@ body{
 #app1 .actions {
 
 }#app2{
-    border:1px solid blue;
 }
 #app2 .tab-bar{
     display: flex;
